@@ -1,0 +1,13 @@
+pandas 
+numpy
+seaborn
+matplotlib
+flask
+python-dotenv
+mysql-connector-python
+pymysql 
+scikit-learn    
+catboost
+xgboost
+dill 
+mlflow==2.2.2
