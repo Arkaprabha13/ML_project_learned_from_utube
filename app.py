@@ -8,6 +8,17 @@ from src.ML_project.components.model_trainer import model_trainer
 from src.ML_project.components.model_trainer import model_trainer_config
 import sys
 
+import dagshub
+import mlflow
+
+dagshub.init("ML_project_learned_from_utube", "Arkaprabha13", mlflow=True)
+mlflow.start_run()
+
+
+mlflow.log_param("parameter name ", "value")
+mlflow.log_metric("metric name", 1)
+
+mlflow.end_run()
 
 if __name__=="__main__":
     logging.info("The execution has started")
